@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<title>Simple Map</title>
+<meta name="viewport" content="initial-scale=1.0">
+<meta charset="utf-8">
+<style>
+  /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<script src="https://maps.googleapis.com/maps/api/js?key=ENTER_YOUR_API_KEY_HERE&callback=initMap" async
+  defer></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<body>
+  <div id="map"></div>
+  <script type="text/javascript">
+    $.ajax({
+      url: "/_get_data/",
+      type: "POST",
+      success: function (resp) {
+        console.log(resp.data[1])
+        console.log(resp.data.length)
+        console.log(1)
+        var geocoder = new google.maps.Geocoder()
+        console.log(resp.data[1].lat)
+        for (i = 0; i < resp.data.length; i++) {
+          if (resp.data[i].location.address != null) {
+            console.log(resp.data[i].location.address)
+
+            var marker = new google.maps.Marker({
+              position: {
+                lat: resp.data[i].lat,
+                lng: resp.data[i].lng
+              },
+              map: map,
+              title: "date"
+            });
+            var contentString = '<div id = "content">' +
+              '<p>Location: ' + resp.data[i].location.address + '</p>' +
+              '<br>' +
+              '<p>Date: ' + resp.data[i].date + '</p>' +
+              '<br>' +
+              '<p>Amount Withdrawn: $' + resp.data[i].amount + '</p>' +
+              '<br>' +
+              '<p> Transaction info: ' + resp.data[i].name + '</p>' +
+              '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+            google.maps.event.addListener(marker, 'click', (function (marker, contentString, infowindow) {
+              return function () {
+                infowindow.setContent(contentString);
+                infowindow.open(map, marker);
+              };
+            })(marker, contentString, infowindow));
+          }
+        }
+      }
+    });
+
+    var map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: -34.397,
+          lng: 150.644
+        },
+        zoom: 8
+      });
+
+    }
+  </script>
+
+
+
+</html>
