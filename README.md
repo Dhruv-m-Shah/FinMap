@@ -12,8 +12,8 @@ sudo pip3 install flask
 sudo pip3 install opencage
 ```
 API keys:
-* Google api key from the (Google Developers Console)[https://console.developers.google.com]
-* (Opencage API key)[https://opencagedata.com/api]
+* Google api key from the (Google Developers Console) [https://console.developers.google.com]
+* (Opencage API key) [https://opencagedata.com/api]
 
 ## Usage
 Once the backend.py program is executed, webpage can be seen in the this local URL: http://127.0.0.1:5000/
