@@ -22,7 +22,7 @@ Emails containing transaction information are sent once every week.
 
 
 ## Financial-Helper in Action
-![Timeline1](https://user-images.githubusercontent.com/42727015/63823104-ac65cd00-c920-11e9-8b54-dae485022140.gif)
+![Timeline3](https://user-images.githubusercontent.com/42727015/63825362-893f1b80-c928-11e9-8c57-042a7e7e3987.gif)
 
 
 
