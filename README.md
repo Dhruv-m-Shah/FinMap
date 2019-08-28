@@ -1,4 +1,4 @@
-# Greenhouse Data Loggoer
+# Greenhouse Data Logger
 
 This application records a user's spending on Google Maps. This allows user to see where they have spent their money. The app also sends weekly emails with transaction and balance summary.
 
