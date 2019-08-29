@@ -2,6 +2,11 @@
 
 This application records a user's spending on Google Maps. This allows the user to see where they spend their money. The app also sends weekly emails with a transaction and balance summary.
 
+### How it works
+![Financial Advisor Pictorial](https://user-images.githubusercontent.com/42727015/63905604-bcde7c00-c9e2-11e9-93f7-47e9b14f7d5e.png)
+
+The PLAID API helps obtain transaction information from your bank which is processed and sent through a AJAX POST request to be displayed on google maps.
+
 
 ### Installing
 Python:
@@ -15,13 +20,13 @@ API keys:
 * Google api key from the [Google Developers Console](https://console.developers.google.com)
 * [Opencage API key](https://opencagedata.com/api)
 
-## Usage
+### Usage
 Once the backend.py program is executed, webpage can be seen in the this local URL: http://127.0.0.1:5000/
 Emails containing transaction information are sent once every week. 
 
 
 
-## Financial-Helper in Action
+### Financial-Helper in Action
 ![Timeline3](https://user-images.githubusercontent.com/42727015/63825362-893f1b80-c928-11e9-8c57-042a7e7e3987.gif)
 
 
