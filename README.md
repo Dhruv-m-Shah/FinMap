@@ -3,7 +3,7 @@
 This application records a user's spending on Google Maps. This allows the user to see where they spend their money. The app also sends weekly emails with a transaction and balance summary.
 
 ### How it works
-![Financial Advisor Pictorial](https://user-images.githubusercontent.com/42727015/63905604-bcde7c00-c9e2-11e9-93f7-47e9b14f7d5e.png)
+![trimmed financial advisor pictorial](https://user-images.githubusercontent.com/42727015/63906020-2c08a000-c9e4-11e9-8634-0c81660eb401.png)
 
 The PLAID API helps obtain transaction information from your bank which is processed and sent through a AJAX POST request to be displayed on google maps.
 
