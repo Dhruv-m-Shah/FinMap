@@ -5,7 +5,7 @@ This application records a user's spending on Google Maps. This allows the user 
 ### How it works
 ![trimmed financial advisor pictorial](https://user-images.githubusercontent.com/42727015/63906020-2c08a000-c9e4-11e9-8634-0c81660eb401.png)
 
-The PLAID API helps obtain transaction information from your bank which is processed and sent through a AJAX POST request to be displayed on google maps.
+The PLAID API obtains transaction information from your bank which is processed and sent through a AJAX POST request to be displayed on google maps.
 
 
 ### Installing
