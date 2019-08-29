@@ -21,7 +21,7 @@ API keys:
 * [Opencage API key](https://opencagedata.com/api)
 
 ### Usage
-Once the backend.py program is executed, webpage can be seen in the this local URL: http://127.0.0.1:5000/
+Once the backend.py program is executed, webpage can be seen in the this localhost: http://127.0.0.1:5000/
 Emails containing transaction information are sent once every week. 
 
 
