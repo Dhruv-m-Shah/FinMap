@@ -1,6 +1,6 @@
 # Financial-Helper
 
-This application retrieve's spending data from a user's bank account and records the spending on Google Maps. This allows the user to see where they spend their money. The app also sends weekly emails with a transaction and balance summary.
+This application retrieves spending data from a user's bank account and records the spending on Google Maps. This allows the user to see where they spend their money. The app also sends weekly emails with a transaction and balance summary.
 
 ### How it works
 ![trimmed financial advisor pictorial](https://user-images.githubusercontent.com/42727015/63906020-2c08a000-c9e4-11e9-8634-0c81660eb401.png)
